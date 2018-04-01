@@ -7,6 +7,7 @@ color1.value = '#ff0000';
 color2.value = '#ffff00';
 
 setColor();
+chromeButtonPositionFix();
 
 color1.addEventListener('input', setColor);
 color2.addEventListener('input', setColor);
@@ -39,3 +40,9 @@ function setColor(){
 
   css.textContent = body.style.background + ';'
 };
+
+function chromeButtonPositionFix() {
+if (navigator.appVersion.indexOf("Chrome/") != -1) {
+color1.style.marginLeft = '10px'// modify button
+  }
+}
