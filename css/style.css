@@ -33,3 +33,9 @@ button{
 	letter-spacing: 0.01em;
 	margin-top: 10px;
 }
+
+input {
+	width: 64px;
+	height: 23px;
+
+}
